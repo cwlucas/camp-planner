@@ -291,9 +291,10 @@ const EditScheduleModal = ({ modal, planData, handleCloseModal, handleScheduleCh
 
 const ManagementModal = ({ isOpen, onClose, title, items, onSave, placeholder }) => {
     if (!isOpen) return null;
-    const [currentItems, setCurrentItems] = useState([...items]);
+    const [currentItems, setCurrentItems] = useState([...items].sort((a, b) => a.localeCompare(b)));
     const [newItem, setNewItem] = useState('');
-    const handleAddItem = () => { if (newItem.trim() && !currentItems.includes(newItem.trim())) { setCurrentItems([...currentItems, newItem.trim()]); setNewItem(''); } };
+    const handleAddItem = () => { if (newItem.trim() && !currentItems.includes(newItem.trim())) { setCurrentItems([...currentItems, newItem.trim()].sort((a, b) => a.localeCompare(b)));
+ setNewItem(''); } };
     const handleRemoveItem = (itemToRemove) => setCurrentItems(currentItems.filter(item => item !== itemToRemove));
     const handleSave = () => { onSave(currentItems); onClose(); };
     return (
