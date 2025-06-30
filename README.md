@@ -1,6 +1,6 @@
 # 🏕️ Summer Camp Planner
 
-Coordinate summer camp schedules with friends — easily and visually.
+Coordinate 2025 summer camp schedules with friends — easily and visually.
 
 Built for parents who want to plan their children's summer together, this app lets you create a schedule, invite others, and see who’s attending which camp week by week.
 
