@@ -151,7 +151,7 @@ const ScheduleGrid = ({ planData, handleGoHome, planId, isCopied, handleCopyToCl
                 <div className="flex flex-col sm:flex-row items-center gap-3">
                     <select onChange={e => setSelectedKidForSummary(e.target.value)} className="p-2 border border-gray-300 rounded-md w-full sm:w-auto shadow-sm">
                         <option value="">-- Select a Kid --</option>
-                        {planData.allKids.map(kid => <option key={kid} value={kid}>{kid}</option>)}
+                        {[...planData.allKids].sort((a, b) => a.localeCompare(b)).map(kid => <option key={kid} value={kid}>{kid}</option>)}
                     </select>
                     <button onClick={() => setIsPrintView(true)} className="bg-green-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-600 transition flex items-center gap-2 w-full sm:w-auto justify-center shadow-sm">
                         <Printer size={16}/> View Summary
