@@ -534,9 +534,36 @@ export default function App() {
         <>
             <style>{`
                 @media print {
-                    .no-print { display: none !important; }
-                    body, .printable-area { margin: 0; padding: 0; box-shadow: none; background: white !important; }
-                }
+                    body, html {
+                      margin: 0;
+                      padding: 0;
+                      background: white;
+                    }
+
+                    .printable-area {
+                      width: 100%;
+                      max-width: 7.5in;
+                      padding: 0.5in;
+                      margin: 0 auto;
+                      box-shadow: none;
+                      background: white;
+                      page-break-inside: avoid;
+                    }
+
+                    .printable-area > * {
+                      page-break-inside: avoid;
+                      break-inside: avoid;
+                    }
+
+                    .no-print {
+                      display: none !important;
+                    }
+
+                    @page {
+                      size: 8.5in 11in;
+                      margin: 0.5in;
+                    }
+              }
             `}</style>
             <div className="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen font-sans text-gray-900 flex items-center justify-center p-4">
                 <div className="w-full">
