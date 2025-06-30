@@ -1,12 +1,36 @@
-# React + Vite
+# 🏕️ Summer Camp Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Coordinate summer camp schedules with friends — easily and visually.
 
-Currently, two official plugins are available:
+Built for parents who want to plan their children's summer together, this app lets you create a schedule, invite others, and see who’s attending which camp week by week.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Create & join shared plans with unique plan IDs
+- 👧 Add kids and assign them to camps by week
+- 🗓️ Visual schedule grid showing who’s going where
+- 🖨️ Printable summaries for each child (with friend highlights!)
+- 🔄 Real-time collaboration powered by Firebase
+- 📱 Fully responsive and mobile-friendly
+
+---
+
+## 🧱 Tech Stack
+
+- **React** + **Vite** for the frontend
+- **Tailwind CSS** for styling
+- **Firebase Auth** (anonymous sign-in)
+- **Cloud Firestore** for real-time data
+- **Lucide-react** icons
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/summer-camp-planner.git
+cd summer-camp-planner
