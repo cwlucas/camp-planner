@@ -65,7 +65,7 @@ const SetupScreen = ({ handleGoHome, planId, myKidName, setMyKidName, campNames,
             <ArrowLeft size={18} className="mr-1" /> Back to Home
         </button>
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Create Your Plan</h2>
-        <p className="text-gray-600 mb-6">Enter the details below. Week 1 starts June 23, 2025. Share the Plan ID with other parents: <strong className="text-blue-600 font-mono">{planId}</strong></p>
+        <p className="text-gray-600 mb-6">Enter the details below. Week 1 starts June 22, 2026. Share the Plan ID with other parents: <strong className="text-blue-600 font-mono">{planId}</strong></p>
         <div className="space-y-5">
             <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Your Kid's Name</label>
@@ -352,7 +352,7 @@ export default function App() {
     const [myKidName, setMyKidName] = useState('');
     const [campNames, setCampNames] = useState('');
     const [weekCount, setWeekCount] = useState(8);
-    const [startDate] = useState('2025-06-23');
+    const [startDate] = useState('2026-06-22');
 
     // --- Firebase Initialization ---
     useEffect(() => {
